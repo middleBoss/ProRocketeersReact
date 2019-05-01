@@ -23,11 +23,103 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.search-field {
+  width: 200px;
+}
+
+.search-btn {
+  width: 100%;
+}
+
+.profile .user-name, .username, .profile-bio {
+  color: #fff;
+  background-color: #acacac;
+  padding: 5px 10px;
+  margin: 10px;
+  border-radius: 7px;
+}
+
+.profile-bio {
+  font-size: 24px;
+}
+
+.profile .user-photo {
+  width: 40%;
+  margin: 30px auto;
+  border-radius: 5%;
+}
+
+.profile, .repository, .follower {
+  width: 70%;
+  border: 1px solid #acacac;
+  border-radius: 7px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.repository .repository-name {
+  color: #0056b3
+}
+
+.repository .repository-name span {
+  color: #acacac
+}
+
+.repository .technology {
+  color: #0056b3;
+}
+
+.repository .repository-description span {
+  color: #000;
+}
+
+.follower {
+  display: block;
+  margin: 10px auto;
+}
+
+.followers-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.follower-avatar {
+  width: 120px;
+  height: 120px;
+  margin: 0 20px 0 0;
+  border-radius: 5%;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+}
+
+.error-message {
+  width: 30%;
+  margin: 20px auto;
+  text-align: center;
+  color: #FF0000;
+}
+
+@media screen and (max-width: 992px) {
+  .profile .user-photo {
+    width: 95%;
   }
-  to {
-    transform: rotate(360deg);
+  .follower {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .follower-avatar {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    border-radius: 5%;
+  }
+  .repository-name {
+    font-size: 23px;
   }
 }
